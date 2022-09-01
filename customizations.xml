@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities />
+  <Roles />
+  <Workflows>
+    <Workflow WorkflowId="{1b185239-0c7a-43d3-9fe6-cf73bb4c1036}" Name="CustomiseRibbon">
+      <XamlFileName>/Workflows/CustomiseRibbon-1B185239-0C7A-43D3-9FE6-CF73BB4C1036.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>3</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <SdkMessageId>{6c798bbc-e4b9-e511-8149-080027846324}</SdkMessageId>
+      <UniqueName>CustomiseRibbon</UniqueName>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <PrimaryEntity>none</PrimaryEntity>
+    </Workflow>
+  </Workflows>
+  <FieldSecurityProfiles />
+  <Templates />
+  <RibbonDiffXml>
+    <CustomActions>
+      <CustomAction Id="rwb.ApplicationRibbon.RibbonWorkbench2016.Button.CustomAction" Location="Mscrm.BasicHomeTab.Tools.Controls._children" Sequence="55">
+        <CommandUIDefinition>
+          <Button Alt="$LocLabels:rwb.ApplicationRibbon.RibbonWorkbench2016.Button.Alt" Command="rwb.ApplicationRibbon.RibbonWorkbench2016.Command" Id="rwb.ApplicationRibbon.RibbonWorkbench2016.Button" Image16by16="$webresource:rwb_/images/rwb2016.png" LabelText="$LocLabels:rwb.ApplicationRibbon.RibbonWorkbench2016.Button.LabelText" Sequence="55" TemplateAlias="isv" ToolTipTitle="$LocLabels:rwb.ApplicationRibbon.RibbonWorkbench2016.Button.ToolTipTitle" ToolTipDescription="$LocLabels:rwb.ApplicationRibbon.RibbonWorkbench2016.Button.ToolTipDescription" />
+        </CommandUIDefinition>
+      </CustomAction>
+    </CustomActions>
+    <Templates>
+      <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+    </Templates>
+    <CommandDefinitions>
+      <CommandDefinition Id="rwb.ApplicationRibbon.RibbonWorkbench2016.Command">
+        <EnableRules />
+        <DisplayRules>
+          <DisplayRule Id="rwb.ApplicationRibbon.RibbonWorkbench2016.DisplayRule" />
+        </DisplayRules>
+        <Actions>
+          <Url Address="$webresource:rwb_/html/EditCommandBar.htm" WinMode="0" />
+        </Actions>
+      </CommandDefinition>
+    </CommandDefinitions>
+    <RuleDefinitions>
+      <TabDisplayRules />
+      <DisplayRules>
+        <DisplayRule Id="rwb.ApplicationRibbon.RibbonWorkbench2016.DisplayRule">
+          <OrRule>
+            <Or>
+              <PageRule Address="/tools/Solution/home_solution.aspx" />
+            </Or>
+            <Or>
+              <PageRule Address="/tools/systemcustomization/systemcustomization.aspx" />
+            </Or>
+            <Or>
+              <CrmClientTypeRule Type="Outlook" />
+              <MiscellaneousPrivilegeRule PrivilegeName="ImportCustomization" />
+            </Or>
+          </OrRule>
+        </DisplayRule>
+      </DisplayRules>
+      <EnableRules />
+    </RuleDefinitions>
+    <LocLabels>
+      <LocLabel Id="rwb.ApplicationRibbon.RibbonWorkbench2016.Button.Alt">
+        <Titles>
+          <Title description="Ribbon Workbench" languagecode="1033" />
+        </Titles>
+      </LocLabel>
+      <LocLabel Id="rwb.ApplicationRibbon.RibbonWorkbench2016.Button.LabelText">
+        <Titles>
+          <Title description="Ribbon Workbench" languagecode="1033" />
+        </Titles>
+      </LocLabel>
+      <LocLabel Id="rwb.ApplicationRibbon.RibbonWorkbench2016.Button.ToolTipDescription">
+        <Titles>
+          <Title description="Customise the Ribbon/CommandBar" languagecode="1033" />
+        </Titles>
+      </LocLabel>
+      <LocLabel Id="rwb.ApplicationRibbon.RibbonWorkbench2016.Button.ToolTipTitle">
+        <Titles>
+          <Title description="Ribbon Workbench" languagecode="1033" />
+        </Titles>
+      </LocLabel>
+    </LocLabels>
+  </RibbonDiffXml>
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <WebResources>
+    <WebResource>
+      <WebResourceId>{a58141f1-dce7-e511-815c-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/rwb.css</Name>
+      <DisplayName>rwb_/css/rwb.css</DisplayName>
+      <WebResourceType>2</WebResourceType>
+      <IntroducedVersion>3.0.0</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_cssrwbcssA58141F1-DCE7-E511-815C-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{cf79679e-b4e4-e511-815a-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/sparkle.css</Name>
+      <DisplayName>rwb_/css/sparkle.css</DisplayName>
+      <WebResourceType>2</WebResourceType>
+      <IntroducedVersion>1.1</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_csssparklecssCF79679E-B4E4-E511-815A-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{d279679e-b4e4-e511-815a-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/sparkle_jquery_ui.css</Name>
+      <DisplayName>rwb_/css/sparkle_jquery_ui.css</DisplayName>
+      <WebResourceType>2</WebResourceType>
+      <IntroducedVersion>1.1</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_csssparkle_jquery_uicssD279679E-B4E4-E511-815A-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{c1bf1492-b4e4-e511-815a-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/images/btn_lookup_resolving.gif</Name>
+      <DisplayName>rwb_/css/images/btn_lookup_resolving.gif</DisplayName>
+      <WebResourceType>7</WebResourceType>
+      <IntroducedVersion>1.1</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_cssimagesbtn_lookup_resolvinggifC1BF1492-B4E4-E511-815A-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{c4bf1492-b4e4-e511-815a-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/images/control_imgs.png</Name>
+      <DisplayName>rwb_/css/images/control_imgs.png</DisplayName>
+      <WebResourceType>5</WebResourceType>
+      <IntroducedVersion>1.1</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_cssimagescontrol_imgspngC4BF1492-B4E4-E511-815A-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{c7bf1492-b4e4-e511-815a-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/images/grid_ctrl_imgs.png</Name>
+      <DisplayName>rwb_/css/images/grid_ctrl_imgs.png</DisplayName>
+      <WebResourceType>5</WebResourceType>
+      <IntroducedVersion>1.1</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_cssimagesgrid_ctrl_imgspngC7BF1492-B4E4-E511-815A-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{c09f2998-b4e4-e511-815a-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/images/inlineedit_images.png</Name>
+      <DisplayName>rwb_/css/images/inlineedit_images.png</DisplayName>
+      <WebResourceType>5</WebResourceType>
+      <IntroducedVersion>1.1</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_cssimagesinlineedit_imagespngC09F2998-B4E4-E511-815A-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{c39f2998-b4e4-e511-815a-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/images/progress.gif</Name>
+      <DisplayName>rwb_/css/images/progress.gif</DisplayName>
+      <WebResourceType>7</WebResourceType>
+      <IntroducedVersion>1.1</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_cssimagesprogressgifC39F2998-B4E4-E511-815A-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{ffbedd3c-72e5-e511-815b-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/images/transparent_spacer.gif</Name>
+      <DisplayName>rwb_/css/images/transparent_spacer.gif</DisplayName>
+      <WebResourceType>7</WebResourceType>
+      <IntroducedVersion>1.1</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_cssimagestransparent_spacergifFFBEDD3C-72E5-E511-815B-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{c69f2998-b4e4-e511-815a-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/images/ui_icons_222222_256x240.png</Name>
+      <DisplayName>rwb_/css/images/ui_icons_222222_256x240.png</DisplayName>
+      <WebResourceType>5</WebResourceType>
+      <IntroducedVersion>1.1</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_cssimagesui_icons_222222_256x240pngC69F2998-B4E4-E511-815A-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{cc79679e-b4e4-e511-815a-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/images/ui_icons_3f5ac6_256x240.png</Name>
+      <DisplayName>rwb_/css/images/ui_icons_3f5ac6_256x240.png</DisplayName>
+      <WebResourceType>5</WebResourceType>
+      <IntroducedVersion>1.1</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_cssimagesui_icons_3f5ac6_256x240pngCC79679E-B4E4-E511-815A-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{c856827b-85e7-e511-815c-0800278d9765}</WebResourceId>
+      <Name>rwb_/css/images/ui_icons_888888_256x240.png</Name>
+      <DisplayName>rwb_/css/images/ui_icons_888888_256x240.png</DisplayName>
+      <WebResourceType>5</WebResourceType>
+      <IntroducedVersion>1.2</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_cssimagesui_icons_888888_256x240pngC856827B-85E7-E511-815C-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{46fa4d06-bcbf-e511-814a-080027846324}</WebResourceId>
+      <Name>rwb_/html/EditCommandBar.htm</Name>
+      <DisplayName>rwb_/html/EditCommandBar.htm</DisplayName>
+      <WebResourceType>1</WebResourceType>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_htmlEditCommandBarhtm46FA4D06-BCBF-E511-814A-080027846324</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{ed343b4c-72e5-e511-815b-0800278d9765}</WebResourceId>
+      <Name>rwb_/html/templates.htm</Name>
+      <DisplayName>rwb_/html/templates.htm</DisplayName>
+      <WebResourceType>1</WebResourceType>
+      <IntroducedVersion>1.1</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_htmltemplateshtmED343B4C-72E5-E511-815B-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{0864fe6e-b7f2-e511-8169-0800278d9765}</WebResourceId>
+      <Name>rwb_/images/rwb2016.png</Name>
+      <DisplayName>rwb_/images/rwb2016.png</DisplayName>
+      <WebResourceType>5</WebResourceType>
+      <IntroducedVersion>3.0.2</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_imagesrwb2016png0864FE6E-B7F2-E511-8169-0800278D9765</FileName>
+    </WebResource>
+    <WebResource>
+      <WebResourceId>{4cfa4d06-bcbf-e511-814a-080027846324}</WebResourceId>
+      <Name>rwb_/js/ClientUI.js</Name>
+      <DisplayName>rwb_/js/ClientUI.js</DisplayName>
+      <WebResourceType>3</WebResourceType>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/rwb_jsClientUIjs4CFA4D06-BCBF-E511-814A-080027846324</FileName>
+    </WebResource>
+  </WebResources>
+  <SolutionPluginAssemblies>
+    <PluginAssembly FullName="RWB2016.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a4d6280d7e90857" CustomizationLevel="1">
+      <IsolationMode>2</IsolationMode>
+      <SourceType>0</SourceType>
+      <IntroducedVersion>3.0.17</IntroducedVersion>
+      <FileName>/PluginAssemblies/RWB2016Plugins-C2E1413A-F752-4DFF-8A95-1007805F37E9/RWB2016Plugins.dll</FileName>
+      <PluginTypes>
+        <PluginType AssemblyQualifiedName="RWB2016.Plugins.RibbonCustomisationsPlugin, RWB2016.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a4d6280d7e90857" Name="RWB2016.Plugins.RibbonCustomisationsPlugin">
+          <FriendlyName>e8197941-cecb-4354-91dc-4827c6adae0e</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="SparkleXrm.Plugins.Plugin, RWB2016.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a4d6280d7e90857" Name="SparkleXrm.Plugins.Plugin">
+          <FriendlyName>6b0a2ac7-434f-4146-b300-78ac717d291c</FriendlyName>
+        </PluginType>
+      </PluginTypes>
+    </PluginAssembly>
+  </SolutionPluginAssemblies>
+  <SdkMessageProcessingSteps>
+    <SdkMessageProcessingStep Name="Ribbon Workbench Action" SdkMessageProcessingStepId="{ac49cdfa-aeef-e611-81d5-0800278d9765}">
+      <PluginTypeName>RWB2016.Plugins.RibbonCustomisationsPlugin, RWB2016.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a4d6280d7e90857</PluginTypeName>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>Ribbon Workbench Action</Description>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <SdkMessageId>{6c798bbc-e4b9-e511-8149-080027846324}</SdkMessageId>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>3.0.25</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+  </SdkMessageProcessingSteps>
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>
